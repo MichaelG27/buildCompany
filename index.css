@@ -1,0 +1,363 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden; }
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: MontserratBold;
+  src: url(ade91f473255991f410f61857696434b.ttf);
+}
+
+@font-face {
+  font-family: MontserratRegular;
+  src: url(ee6539921d713482b8ccd4d0d23961bb.ttf);
+}
+
+@font-face {
+  font-family: VerdanaRegular;
+  src: url(3ba52ab1fa0cd726e7868e9c6673902c.ttf);
+}
+.index_headerBlock {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 30px 60px;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: hidden;
+  box-sizing: border-box; }
+  .index_headerBlock #open-btn-light {
+    display: block; }
+  .index_headerBlock #open-btn-dark {
+    display: none; }
+  .index_headerBlock #globe-light {
+    display: block; }
+  .index_headerBlock #globe-dark {
+    display: none; }
+  .index_headerBlock .sun {
+    display: none;
+    width: 58px;
+    height: 58px; }
+  .index_headerBlock .light-text {
+    display: none; }
+  .index_headerBlock .headerBlock_wrapper {
+    max-width: 1920px;
+    width: 100%;
+    margin: auto; }
+  .index_headerBlock .headerBlock_left {
+    display: flex;
+    align-items: center; }
+    .index_headerBlock .headerBlock_left_menu {
+      width: 58px;
+      height: 58px; }
+    .index_headerBlock .headerBlock_left_h1 {
+      font-family: MontserratRegular;
+      font-size: 40px;
+      font-weight: 100;
+      margin-left: 100px; }
+  .index_headerBlock .headerBlock_right {
+    display: flex;
+    max-width: 100%;
+    align-items: center; }
+    .index_headerBlock .headerBlock_right_languageBlock {
+      display: flex;
+      margin-right: 90px; }
+      .index_headerBlock .headerBlock_right_languageBlock_icon {
+        width: 35px;
+        height: 35px;
+        margin-right: 15px; }
+      .index_headerBlock .headerBlock_right_languageBlock_text {
+        font-family: MontserratRegular;
+        font-size: 25px; }
+    .index_headerBlock .headerBlock_right_modeBlock {
+      display: flex;
+      cursor: pointer; }
+      .index_headerBlock .headerBlock_right_modeBlock_icon {
+        width: 35px;
+        height: 35px;
+        margin-right: 15px; }
+      .index_headerBlock .headerBlock_right_modeBlock_text {
+        font-family: MontserratRegular;
+        font-size: 25px; }
+  @media screen and (max-width: 1000px) {
+    .index_headerBlock .headerBlock_right {
+      display: none; }
+    .index_headerBlock .headerBlock_left {
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+    .index_headerBlock .headerBlock_left_h1 {
+      margin-left: 0; } }
+  @media screen and (max-width: 768px) {
+    .index_headerBlock .headerBlock_left_menu {
+      width: 30px;
+      height: 30px; }
+    .index_headerBlock .headerBlock_left_h1 {
+      font-size: 20px; } }
+
+.index_navBlock {
+  position: relative;
+  background-color: white;
+  height: 100%;
+  max-width: 100%;
+  width: 50%;
+  position: absolute;
+  left: -100%;
+  z-index: 99;
+  transition: 1s; }
+  .index_navBlock .animate-link:hover .border-line {
+    left: 100%;
+    transition: 1s; }
+  .index_navBlock_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 50px;
+    padding-right: 25px; }
+    .index_navBlock_wrapper_link {
+      margin-bottom: 20px;
+      font-family: MontserratRegular;
+      font-size: 24px;
+      font-weight: 100;
+      position: relative;
+      overflow: hidden;
+      transition: 0.2s; }
+      .index_navBlock_wrapper_link .border-line {
+        position: absolute;
+        display: block;
+        bottom: 0;
+        width: 100%;
+        left: -100%;
+        height: 2px;
+        background-color: black; }
+      .index_navBlock_wrapper_link .border-line::before {
+        content: " "; }
+    .index_navBlock_wrapper_language {
+      margin-top: 50px;
+      margin-bottom: 20px;
+      font-family: MontserratRegular;
+      font-size: 24px;
+      font-weight: 100;
+      position: relative;
+      overflow: hidden;
+      transition: 0.2s; }
+      .index_navBlock_wrapper_language .border-line {
+        position: absolute;
+        display: block;
+        bottom: 0;
+        width: 100%;
+        left: -100%;
+        height: 2px;
+        background-color: black; }
+      .index_navBlock_wrapper_language .border-line::before {
+        content: " "; }
+    .index_navBlock_wrapper_theme {
+      cursor: pointer;
+      font-family: MontserratRegular;
+      font-size: 24px;
+      font-weight: 100;
+      position: relative;
+      overflow: hidden;
+      transition: 0.2s; }
+      .index_navBlock_wrapper_theme .border-line {
+        position: absolute;
+        display: block;
+        bottom: 0;
+        width: 100%;
+        left: -100%;
+        height: 2px;
+        background-color: black; }
+      .index_navBlock_wrapper_theme .border-line::before {
+        content: " "; }
+
+.open-menu {
+  left: 0; }
+
+.index_offerBlock {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 825px; }
+  .index_offerBlock_slider {
+    display: flex;
+    width: 100%; }
+    .index_offerBlock_slider img {
+      width: 100%;
+      display: none; }
+  .index_offerBlock_button {
+    position: absolute;
+    background-color: white;
+    color: black;
+    font-family: MontserratBold;
+    font-size: 40px;
+    font-weight: bold;
+    top: 80%;
+    left: 12%;
+    padding: 10px;
+    border-radius: 1px; }
+
+.index_contentBlock {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto; }
+  .index_contentBlock_wrapper {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto; }
+    .index_contentBlock_wrapper_topText {
+      font-family: MontserratRegular;
+      font-size: 48px;
+      color: black;
+      margin-top: 30px; }
+    .index_contentBlock_wrapper_types {
+      margin-top: 100px;
+      display: grid;
+      grid-template-columns: 45% 45%;
+      grid-column-gap: 10%; }
+      .index_contentBlock_wrapper_types_typeBlock {
+        display: flex;
+        flex-direction: column; }
+        .index_contentBlock_wrapper_types_typeBlock_typeText {
+          font-family: MontserratRegular;
+          font-size: 20px;
+          color: black; }
+
+.index_linksBlock_wrapper {
+  width: 100%;
+  max-width: 1300px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between; }
+  .index_linksBlock_wrapper_seeHouses {
+    font-family: MontserratRegular;
+    font-size: 30px;
+    background-color: #DDDDDD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    padding: 25px 0; }
+  .index_linksBlock_wrapper_configurator {
+    font-family: MontserratRegular;
+    font-size: 30px;
+    background-color: #DDDDDD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    padding: 25px 0; }
+
+.index_footerBlock {
+  font-family: MontserratRegular;
+  font-size: 20px;
+  max-width: 1300px;
+  width: 100%;
+  margin: 100px auto;
+  text-align: center; }
+
+@media screen and (max-width: 1300px) {
+  .index_contentBlock_wrapper p {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .index_contentBlock_wrapper_types {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .index_linksBlock {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .index_footerBlock_text {
+    font-size: 15px;
+    margin: 30px auto -20px;
+    height: auto;
+    padding-left: 15px;
+    padding-right: 15px; } }
+
+@media screen and (max-width: 1250px) {
+  .index_offerBlock {
+    height: auto; }
+  .index_contentBlock_wrapper p {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 30px; } }
+
+@media screen and (max-width: 1000px) {
+  .index_contentBlock_wrapper div {
+    grid-template-columns: 100%;
+    padding-left: 15px;
+    padding-right: 15px; } }
+
+@media screen and (max-width: 768px) {
+  .index_offerBlock_button {
+    font-size: 24px; }
+  .index_contentBlock_wrapper div {
+    margin-top: 30px; }
+  .index_linksBlock_wrapper {
+    margin: 50px auto; }
+  .index_linksBlock_wrapper a {
+    width: 45%;
+    padding: 5px;
+    font-size: 14px; }
+  .index_footerBlock {
+    margin: 25px auto; }
+  .index_navBlock {
+    width: 100%; } }
+
+.body-light {
+  background-color: white; }
+  .body-light * {
+    background-color: white; }
+
+.body-dark {
+  background-color: black; }
+  .body-dark * {
+    background-color: black; }
+
+.text-white {
+  color: white; }
+
+.text-black {
+  color: black; }
+
+.menu-link .border-line {
+  background-color: white; }
+
+.index_linksBlock_wrapper_seeHouses {
+  background-color: #DDDDDD;
+  color: black; }
+
+.index_linksBlock_wrapper_configurator {
+  background-color: #DDDDDD;
+  color: black; }
+
+
+/*# sourceMappingURL=index.css.map*/
